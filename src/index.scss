@@ -53,6 +53,14 @@ header {
   padding: 10px;
   border-radius: 10px;
   padding: 0 15px;
+  position: relative;
+
+  .clear {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
 
   input {
     margin-left: 5px;
@@ -183,6 +191,35 @@ header {
 
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+// ///////////////////////////////////////
+.cartEmpty {
+  text-align: center;
+
+  p {
+    width: 280px;
+    line-height: 24px;
+  }
+
+  .greenButton {
+    width: 245px;
+    margin-top: 20px;
+
+    &:hover {
+      img {
+        transform: rotate(180deg) translateX(3px);
+      }
+    }
+
+    img {
+      position: relative;
+      top: 1px;
+      transform: rotate(180deg);
+      margin-right: 15px;
+      transition: transform 0.15s ease-in-out;
     }
   }
 }
